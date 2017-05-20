@@ -57,7 +57,7 @@ PHOTO (AVATAR)
 #photo img{
   width: 150px;
   height: 150px;
-  border-radius: 50%;  
+  border-radius: 50%;
 }
 #photo:hover{
   -moz-transform: scale(1.1);
@@ -223,7 +223,7 @@ CONTACT
   float: left;
 }
 .contact-item .icon{
-  padding: 5px;  
+  padding: 5px;
   color: #405163;
   font-size: 0.9em;
   -moz-transition: transform 0.2s ease-in-out;
@@ -231,13 +231,13 @@ CONTACT
   transition: transform 0.2s ease-in-out;
 }
 .contact-item .icon:hover{
-  opacity: 1.0;  
+  opacity: 1.0;
 }
 .contact-item .icon span{
   opacity: 0.4;
 }
 .contact-item .icon span:hover{
-  opacity: 1.0;  
+  opacity: 1.0;
   /*-moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);*/
@@ -249,7 +249,7 @@ CONTACT
   height: 30px;
   width: 30px;
   display: inline-block;
-  margin-top: 4px;
+  margin-top: 5px;
 }
 .custom-icon:hover{
   -moz-transform: scale(1.2);
@@ -257,27 +257,27 @@ CONTACT
   transform: scale(1.2);
 }
 .custom-icon-phone{
-  background: url(../img/Phone-Icon.png) no-repeat;
+  color: #5aba47;
   background-size: 95%;
 }
 .custom-icon-whatsapp{
-  background: url(../img/Whatsapp-Icon.png) no-repeat;
+  color: #30ac1f;
   background-size: 95%;
 }
 .custom-icon-gmail{
-  background: url(../img/Gmail-Icon.png) no-repeat;
+  color: #ef241b;
   background-size: 95%;
 }
 .custom-icon-twitter{
-  background: url(../img/Twitter-Icon.png) no-repeat;
+  color: #5ea9dd;
   background-size: 95%;
 }
 .custom-icon-facebook{
-  background: url(../img/Facebook-Icon.png) no-repeat;
+  color: #2f477a;
   background-size: 95%;
 }
 .custom-icon-skype{
-  background: url(../img/Skype-Icon.png) no-repeat;
+  color: #3498d8;
   background-size: 95%;
 }
 .contact-item:last-child .icon{
@@ -498,12 +498,12 @@ CUSTOM RULES
 }
 
 @keyframes tada {
- 0% {transform: scale(1);} 
- 10%, 20% {transform: scale(0.9) rotate(-3deg);} 
- 30%, 50%, 70%, 90% {transform: scale(1.4) rotate(3deg);} 
- 40%, 60%, 80% {transform: scale(1.3) rotate(-3deg);} 
- 100% {transform: scale(1) rotate(0);} 
-} 
+ 0% {transform: scale(1);}
+ 10%, 20% {transform: scale(0.9) rotate(-3deg);}
+ 30%, 50%, 70%, 90% {transform: scale(1.4) rotate(3deg);}
+ 40%, 60%, 80% {transform: scale(1.3) rotate(-3deg);}
+ 100% {transform: scale(1) rotate(0);}
+}
 
 @media (min-width: 540px) and (max-width: 767px){
   #language-skills .skill{
