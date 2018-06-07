@@ -48,7 +48,6 @@ PHOTO (AVATAR)
   border-radius: 50%;
   overflow: hidden;
   padding: 5px;
-  background: #405163;
   display: inline-block;
   -moz-transition: transform 0.3s ease-in-out;
   -webkit-transition: transform 0.3s ease-in-out;
@@ -214,6 +213,10 @@ EXPERIENCES
 .job .description{
   font-size: 0.75em;
   line-height: 1.5em;
+}
+
+.job .description ul{
+  padding-left: 15px;
 }
 /*******************************************
 CONTACT
