@@ -78,7 +78,7 @@ PHOTO (AVATAR)
   line-height: 1.5em;
 }
 #text-header h1 span{
-  color: #405163;
+  color: #35408a;
 }
 #text-header h1 sup{
   opacity: 0.5;
@@ -98,7 +98,7 @@ DEFAULT BOX
   margin-bottom: 15px;
 }
 .box h2{
-  color: #405163;
+  color: #35408a;
   font-size: 1.1em;
   font-weight: 700;
   text-transform: uppercase;
@@ -128,13 +128,13 @@ EDUCATION
   top: 0;
   content: ' ';
   display: block;
-  background: #405163;
-  background: -moz-linear-gradient(top,  #ffffff 0%, #405163 7%, #405163 89%, #ffffff 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#405163), color-stop(89%,#405163), color-stop(100%,#ffffff));
-  background: -webkit-linear-gradient(top,  #ffffff 0%,#405163 7%,#405163 89%,#ffffff 100%);
-  background: -o-linear-gradient(top,  #ffffff 0%,#405163 7%,#405163 89%,#ffffff 100%);
-  background: -ms-linear-gradient(top,  #ffffff 0%,#405163 7%,#405163 89%,#ffffff 100%);
-  background: linear-gradient(to bottom,  #ffffff 0%,#405163 7%,#405163 89%,#ffffff 100%);
+  background: #35408a;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #35408a 7%, #35408a 89%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#35408a), color-stop(89%,#35408a), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#35408a 7%,#35408a 89%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#35408a 7%,#35408a 89%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#35408a 7%,#35408a 89%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#35408a 7%,#35408a 89%,#ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
 }
 #education li{
@@ -227,7 +227,7 @@ CONTACT
 }
 .contact-item .icon{
   padding: 5px;
-  color: #405163;
+  color: #35408a;
   font-size: 0.9em;
   -moz-transition: transform 0.2s ease-in-out;
   -webkit-transition: transform 0.2s ease-in-out;
@@ -311,7 +311,7 @@ SKILLS
 .item-skills{
   height: 30px;
   width: 0px;
-  background: #405163;
+  background: #35408a;
   color: #fff;
   padding: 5px 10px;
   margin-bottom: 5px;
@@ -405,7 +405,7 @@ HOBBIES
   margin-right: 5px;
   margin-bottom: 5px;
   padding: 5px 5px 5px 25px;
-  background: #405163;
+  background: #35408a;
   position: relative;
   font-size: 0.79em;
   -moz-transition: transform 0.2s ease-in-out;
@@ -465,7 +465,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 COLOR CLASSES
 *******************************************/
 .big-stone{
-  color: #405163;
+  color: #35408a;
 }
 .grey{
   color: #c5d0d9;
