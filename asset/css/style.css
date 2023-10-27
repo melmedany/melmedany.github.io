@@ -112,15 +112,15 @@ DEFAULT BOX
   line-height: 1.5em;
 }
 /*******************************************
-EDUCATION
+LIVE EVENTS
 *******************************************/
-#education{
+#live-event{
   margin-top: 20px;
   position: relative;
   padding: 1em 0;
   list-style: none;
 }
-#education:before {
+#live-event:before {
   width: 5px;
   height: 100%;
   position: absolute;
@@ -137,13 +137,13 @@ EDUCATION
   background: linear-gradient(to bottom,  #ffffff 0%,#35408a 7%,#35408a 89%,#ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
 }
-#education li{
+#live-event li{
   width: 100%;
   z-index: 2;
   position: relative;
   float: left;
 }
-#education .year{
+#live-event .year{
   /*width: 10%;*/
   background: #fff;
   padding: 10px;
@@ -151,12 +151,12 @@ EDUCATION
   font-weight: 700;
   display: inline-block;
 }
-#education .description:hover{
+#live-event .description:hover{
   -moz-transform: scale(1.03);
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
 }
-#education .description{
+#live-event .description{
   width: 80%;
   display: inline-block;
   background: #eee;
@@ -168,7 +168,7 @@ EDUCATION
   -webkit-transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
 }
-#education .description:after {
+#live-event .description:after {
   content: '';
   position: absolute;
   top: 15px;
@@ -181,13 +181,13 @@ EDUCATION
   border-width: 8px;
   pointer-events: none;
 }
-#education .description h3{
+#live-event .description h3{
   font-size: 1.0em;
   margin: 0;
   padding: 0;
   font-weight: 700;
 }
-#education .description p{
+#live-event .description p{
   font-size: 0.8em;
   margin-top: 5px;
   padding: 0;
@@ -259,34 +259,10 @@ CONTACT
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
-.custom-icon-phone{
-  color: #5aba47;
-  background-size: 95%;
-}
-.custom-icon-whatsapp{
-  color: #30ac1f;
-  background-size: 95%;
-}
-.custom-icon-gmail{
-  color: #ef241b;
-  background-size: 95%;
-}
-.custom-icon-twitter{
-  color: #5ea9dd;
-  background-size: 95%;
-}
-.custom-icon-facebook{
-  color: #2f477a;
-  background-size: 95%;
-}
-.custom-icon-skype{
-  color: #3498d8;
-  background-size: 95%;
-}
 .contact-item:last-child .icon{
   border-bottom: none;
 }
-.contact-item .fa{
+.contact-item .fa, .contact-item .fa-brands{
   font-size: 1.8em;
 }
 .contact-item .title{
@@ -430,22 +406,22 @@ HOBBIES
 MEDIA
 *******************************************/
 @media (min-width: 500px) {
-  #education .description{
+  #live-event .description{
     width: 82%;
   }
 }
 @media (min-width: 768px) {
-  #education .description{
+  #live-event .description{
     width: 85%;
   }
 }
 @media (min-width: 992px) {
-  #education .description{
+  #live-event .description{
     width: 87%;
   }
 }
 @media (min-width: 1200px) {
-  #education .description{
+  #live-event .description{
     width: 90%;
   }
   .container{
