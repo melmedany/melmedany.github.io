@@ -47,17 +47,18 @@ window.onresize = function() {
 };
 
 var initStars = function() {
-    var activeStar = "<i class='fa fa-star big-stone fa-2x active-star'></i>";
+    var activeStar = "<i class='fa fa-star big-stone fa-2x'></i>";
     var disabledStar = "<i class='fa fa-star grey fa-2x'></i>";
     $('.skills-stars').each(function() {
       var stars = parseInt($(this).data('stars'));
-      $(this).prop('title', stars + ' Stars');
       $(this).html("");
       if (stars > 0 && stars < 5) {
         for (i = 0; i < stars; i++) {
           $(this).append(activeStar);
         }
-        $(this).append(disabledStar);
+        for (i = 0; i < 5 - stars; i++) {
+          $(this).append(disabledStar);
+        }
       } else if (stars == 5) {
         for (i = 0; i < stars; i++) {
           $(this).append(activeStar);

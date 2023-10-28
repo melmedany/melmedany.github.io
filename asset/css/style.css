@@ -1,13 +1,4 @@
 /*******************************************
-3ColorResume
-Author: office@kamsolutions.pl
-*******************************************/
-/*******************************************
-FONTS
-*******************************************/
-/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);*/
-@import url(https://fonts.googleapis.com/css?family=Lato);
-/*******************************************
 SETTINGS
 *******************************************/
 @charset "utf-8";
@@ -16,6 +7,11 @@ SETTINGS
 @-ms-viewport       { width: device-width; }
 @-o-viewport        { width: device-width; }
 @viewport           { width: device-width; }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  src: url(../webfonts/lato/Lato-Regular.ttf) format('truetype');
+}
 /*******************************************
 BODY
 *******************************************/
@@ -167,6 +163,7 @@ LIVE EVENTS
   -moz-transition: transform 0.2s ease-in-out;
   -webkit-transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
+  border-radius: 15px;
 }
 #live-event .description:after {
   content: '';
@@ -299,6 +296,7 @@ SKILLS
   -moz-transition: transform 0.2s ease-in-out;
   -webkit-transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
+  border-radius: 15px;
 }
 .skills .item-skills:hover{
   box-shadow: 0px 0px 10px #aeb7c6;
@@ -364,14 +362,6 @@ LANGUAGES
 #language-skills .skill .icons-big-stone{
   background: url(../img/star-big-stone.png) no-repeat;
 }
-#language-skills .skill .icons{
-  width: 111px;
-  height: 18px;
-  background: url(../img/star-grey.png) no-repeat;
-}
-#language-skills .skill .icons-red{
-  background: url(../img/star-red.png) no-repeat;
-}
 /*******************************************
 HOBBIES
 *******************************************/
@@ -387,6 +377,7 @@ HOBBIES
   -moz-transition: transform 0.2s ease-in-out;
   -webkit-transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
+  border-radius: 15px;
 }
 .hobby:before{
   content: "\f004";
@@ -453,16 +444,6 @@ CUSTOM RULES
 *******************************************/
 .skills-stars{
   letter-spacing: 5px;
-}
-.skills-stars .active-star{
-  -moz-transition: transform 0.2s ease-in-out;
-  -webkit-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-}
-.skills-stars .active-star:hover{
-  -moz-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
 }
 #years{
   padding-left: 3px;
