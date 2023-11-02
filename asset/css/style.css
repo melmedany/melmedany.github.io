@@ -1,6 +1,4 @@
-/*******************************************
-SETTINGS
-*******************************************/
+
 @charset "utf-8";
 @-webkit-viewport   { width: device-width; }
 @-moz-viewport      { width: device-width; }
@@ -12,9 +10,7 @@ SETTINGS
   font-style: normal;
   src: url(../webfonts/lato/Lato-Regular.ttf) format('truetype');
 }
-/*******************************************
-BODY
-*******************************************/
+
 body{
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -22,25 +18,20 @@ body{
   color: #363636;
   background: #ededed;
 }
-/*******************************************
-CONTAINER
-*******************************************/
+
 .container{
   margin-top: 80px;
   margin-bottom: 15px;
   background: #fff;
-  /*text-align: center;*/
 }
-/*******************************************
-PHOTO (AVATAR)
-*******************************************/
-#photo-header{
-  margin-top: -75px;
-  text-align: center;
+
+#photo-header {
+  position: relative;
 }
+
 #photo{
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   overflow: hidden;
   padding: 5px;
@@ -49,29 +40,34 @@ PHOTO (AVATAR)
   -webkit-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
 }
+
 #photo img{
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
 }
-#photo:hover{
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+
+#text-header {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%,-50%);
 }
+
 #text-header h1{
   margin: 0;
-  padding: 0;
+  padding: 0%;
   font-size: 1.4em;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: -1px;
+  letter-spacing: -0.8px;
+  text-align: left;!important
 }
 #text-header h1::first-line{
   font-size: 1.5em;
-  letter-spacing: -4px;
+/*   letter-spacing: -4px; */
   font-weight: 800;
-  line-height: 1.5em;
+  line-height: 2em;
 }
 #text-header h1 span{
   color: #35408a;
@@ -79,14 +75,7 @@ PHOTO (AVATAR)
 #text-header h1 sup{
   opacity: 0.5;
 }
-#text-header:after{
-  width: 100%;
-  height: 3px;
-  background: url(../img/line.png);
-  margin-top: 15px;
-  content: '';
-  display: block;
-}
+
 /*******************************************
 DEFAULT BOX
 *******************************************/
@@ -416,7 +405,7 @@ MEDIA
     width: 90%;
   }
   .container{
-    width: 1170px;
+    width: 1370px;
   }
 }
 
