@@ -16,7 +16,6 @@ firstload = true,
               width: newWidth,
             }, 1500);
             firstload = false;
-            //alert('firstload changed');
             this.destroy();
           }
         });
@@ -29,7 +28,6 @@ firstload = true,
       height = $(window).height();
       $(".item-skills").each(function(index) {
         var star = this;
-        // currentWidth = $(star).width();
         newWidth = $(star).parent().width() * $(star).data('percent');
         $(star).animate({
           width: newWidth + 'px'
@@ -46,35 +44,23 @@ window.onresize = function() {
   }, 50);
 };
 
-var initStars = function() {
-    var activeStar = "<i class='fa fa-star big-stone fa-2x'></i>";
-    var disabledStar = "<i class='fa fa-star grey fa-2x'></i>";
-    $('.stars').each(function() {
-      var stars = parseInt($(this).data('stars'));
+var initLanguages = function() {
+    var activeStar = "<i class='fa fa-circle fa-lg active'></i>";
+    var disabledStar = "<i class='fa fa-circle fa-lg disabled'></i>";
+    $('.points').each(function() {
+      var points = parseInt($(this).data('points'));
       $(this).html("");
-      if (stars > 0 && stars < 5) {
-        for (i = 0; i < stars; i++) {
+      if (points > 0 && points < 5) {
+        for (i = 0; i < points; i++) {
           $(this).append(activeStar);
         }
-        for (i = 0; i < 5 - stars; i++) {
+        for (i = 0; i < 5 - points; i++) {
           $(this).append(disabledStar);
         }
-      } else if (stars == 5) {
-        for (i = 0; i < stars; i++) {
+      } else if (points == 5) {
+        for (i = 0; i < points; i++) {
           $(this).append(activeStar);
         }
-      }
-    });
-
-    var inviewStars = new Waypoint.Inview({
-      element: $('#language-skills'),
-      enter: function() {
-        $('.active-star').each(function(index) {
-          var star = this;
-          var s = setTimeout(function() {
-            $(star).addClass('tada-finit');
-          }, 500 * index);
-        });
       }
     });
   },
@@ -105,6 +91,6 @@ var initStars = function() {
 
 $(document).ready(function() {
   initSkills();
-  initStars();
+  initLanguages();
   updateYears();
 });

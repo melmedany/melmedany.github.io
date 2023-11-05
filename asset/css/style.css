@@ -94,7 +94,7 @@ body {
 }
 .job .employer {
   font-size: 0.88em;
-  font-weight: bold;
+  font-weight: 600;
 }
 .job .duration {
   font-size: 0.81em;
@@ -102,7 +102,7 @@ body {
 }
 .job .job-title {
   font-size: 1.0em;
-  font-weight: bold;
+  font-weight: 600;
 }
 .job .job-description {
   font-size: 0.81em;
@@ -121,7 +121,7 @@ body {
 }
 .timeline .timeline-title {
     font-size: 1.0em;
-    font-weight: bold;
+    font-weight: 600;
 }
 .timeline .timeline-year {
     --bs-text-opacity: 1;
@@ -233,22 +233,21 @@ body {
   text-align: right;
 }
 
-#language-skills .skill{
-  font-size: 0.95em;
+.language {
+  font-size: 1em;
   font-weight: 600;
   margin: 10px 0;
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
-
-.stars {
-  letter-spacing: 5px;
+.points {
+  letter-spacing: 0.5rem;
 }
-.big-stone{
+.points > i.active {
   color: #003d73;
 }
-.grey{
-  color: #c5d0d9;
+.points > i.disabled {
+  color: #e6e6e6;
 }
 
 .hobby {
@@ -279,20 +278,9 @@ body {
   #photo-header div:nth-child(1) {
     order: 2;
   }
-}
-@media (min-width: 500px) {
-  #live-event .job-description {
-    width: 82%;
-  }
-}
-@media (min-width: 768px) {
-  #live-event .job-description {
-    width: 85%;
-  }
-}
-@media (min-width: 992px) {
-  #live-event .job-description {
-    width: 87%;
+
+  .container {
+    margin: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -300,15 +288,12 @@ body {
     position: relative;
   }
 
-  #text-header {
+  #text-header h1 {
     position: relative;
-    top: 20%;
-  }
-  #live-event .job-description {
-    width: 90%;
+    top: 1.5rem;
   }
   .container {
-    width: 1370px;
+    width: 1170px;
   }
 }
 
