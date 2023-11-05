@@ -49,7 +49,7 @@ window.onresize = function() {
 var initStars = function() {
     var activeStar = "<i class='fa fa-star big-stone fa-2x'></i>";
     var disabledStar = "<i class='fa fa-star grey fa-2x'></i>";
-    $('.skills-stars').each(function() {
+    $('.stars').each(function() {
       var stars = parseInt($(this).data('stars'));
       $(this).html("");
       if (stars > 0 && stars < 5) {
