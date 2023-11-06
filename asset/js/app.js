@@ -62,7 +62,7 @@ var initLanguages = function() {
       $(this).prop('Counter', 0).animate({
         Counter: $(this).text()
       }, {
-        duration: 3000,
+        duration: 1500,
         easing: 'swing',
         step: function(year) {
           $(this).text(Math.ceil(year) + 'yo');
