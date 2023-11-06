@@ -9,8 +9,8 @@
 	<link href="./asset/css/bootstrap.min.css" rel="stylesheet">
 	<link href="./asset/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="./asset/img/avatar.png">
-	<script>
-		document.write("<link href='./asset/css/style.css?v=" + Date.now() + " 'rel='stylesheet' />");
+	<script class="remove">
+		document.write("<link href='./asset/css/style.min.css?v=" + Date.now() + " 'rel='stylesheet' />");
 	</script>
 </head>
 
@@ -31,6 +31,14 @@
 		<hr />
 		<div class="row">
 			<div class="col-12 col-sm-8">
+				<!-- SUMMARY -->
+				<div class="block">
+					<h2>Summary</h2>
+					<p>I'm Mohamed, Senior Software Engineer with many years of experience in software development. I have outstanding experience building software solutions that are both highly available and scalable, and I have proven my skills in multiple work environments, from startups to large multinational organisations.</p>
+					<p>I've recently developed a strong interest in data and machine learning, which has motivated me to study more about these topics and look for new possibilities that would expose me to cutting-edge technology and business challenges.</p>
+					<p>On the personal side, I'm a day-dreamer, coffee addict and food lover. I always seek new challenges to expand my skills and continue to develop both knowledge and potential, in addition to experience cultural differences and gain new friends.</p>
+				</div>
+				<hr />
 				<!-- EXPERIENCES -->
 				<div class="block">
 					<h2>Experiences</h2>
@@ -98,26 +106,19 @@
 						</div>
 					</div>
 				</div>
-				<hr />
-				<!-- SUMMARY -->
-				<div class="block">
-					<h2>Summary</h2>
-					<p>I'm Mohamed, Senior Software Engineer with many years of experience in software development. I have outstanding experience building software solutions that are both highly available and scalable, and I have proven my skills in multiple work environments, from startups to large multinational organisations.</p>
-					<p>I've recently developed a strong interest in data and machine learning, which has motivated me to study more about these topics and look for new possibilities that would expose me to cutting-edge technology and business challenges.</p>
-					<p>On the personal side, I'm a day-dreamer, coffee addict and food lover. I always seek new challenges to expand my skills and continue to develop both knowledge and potential, in addition to experience cultural differences and gain new friends.</p>
-				</div>
 			</div>
 			<div class="col-12 col-sm-4">
 				<!-- SKILLS -->
 				<div class="block">
 					<h2>Skills</h2>
 					<div class="skills">
-						<div class="item-skills" data-percent="0.99">Java</div>
-						<div class="item-skills" data-percent="0.99">Backend Development</div>
-						<div class="item-skills" data-percent="0.98">Databases Analysis & Design</div>
-						<div class="item-skills" data-percent="0.95">REST APIs & SOA</div>
-						<div class="item-skills" data-percent="0.93">Cloud & DevOps</div>
-                        <div class="item-skills" data-percent="0.90">Cross-Platform Mobile</div>
+						<div class="skill" data-percent="0.99">Java, Kotlin, Python</div>
+						<div class="skill" data-percent="0.99">Backend & Web Development</div>
+						<div class="skill" data-percent="0.98">REST APIs & SOA</div>
+						<div class="skill" data-percent="0.98">Testing & Debugging</div>
+						<div class="skill" data-percent="0.95">Databases</div>
+						<div class="skill" data-percent="0.90">Cloud</div>
+						<div class="skill" data-percent="0.85">Agile methodologies</div>
 					</div>
 				</div>
                 <hr />
@@ -216,14 +217,10 @@
 		</div>
 	</div>
 	<script src="./asset/js/jquery.min.js"></script>
-	<script src="./asset/js/jquery.waypoints.min.js"></script>
-	<script src="./asset/js/inview.min.js"></script>
 	<script src="./asset/js/bootstrap.min.js"></script>
-	<script>
-		document.write("<script type='text/javascript' src='./asset/js/app.js?v=" + Date.now() + "'><\/script>");
-		var e = document.getElementsByTagName("script");
-		e = e[e.length - 2];
-		document.body.removeChild(e);
+	<script class="remove">
+		document.write("<script src='./asset/js/app.min.js?v=" + Date.now() + "'><\/script>");
+		document.querySelectorAll(".remove").forEach(el => el.remove());
 	</script>
 </body>
 

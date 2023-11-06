@@ -6,19 +6,11 @@ firstload = true,
   },
 
   initSkills = function() {
-    $(".item-skills").each(function() {
-      var star = this,
-        inviewSkills = new Waypoint.Inview({
-          element: $(star),
-          enter: function() {
-            newWidth = $(star).parent().width() * $(star).data('percent');
-            $(star).animate({
-              width: newWidth,
-            }, 1500);
-            firstload = false;
-            this.destroy();
-          }
-        });
+    $(".skill").each(function() {
+      var skill = this,
+      newWidth = $(skill).parent().width() * $(skill).data('percent');
+      $(skill).animate({width: newWidth,}, 1500);
+      firstload = false;
     });
   },
 
@@ -26,12 +18,10 @@ firstload = true,
     if (!firstload && ($(window).width() != width && $(window).height() != height)) {
       width = $(window).width();
       height = $(window).height();
-      $(".item-skills").each(function(index) {
-        var star = this;
-        newWidth = $(star).parent().width() * $(star).data('percent');
-        $(star).animate({
-          width: newWidth + 'px'
-        }, 150 * index);
+      $(".skill").each(function(index) {
+        var skill = this;
+        newWidth = $(skill).parent().width() * $(skill).data('percent');
+        $(skill).animate({width: newWidth}, 150 * index);
       });
     }
   };
@@ -45,52 +35,45 @@ window.onresize = function() {
 };
 
 var initLanguages = function() {
-    var activeStar = "<i class='fa fa-circle fa-lg active'></i>";
-    var disabledStar = "<i class='fa fa-circle fa-lg disabled'></i>";
+    var active = "<i class='fa fa-circle fa-lg active'></i>";
+    var disabled = "<i class='fa fa-circle fa-lg disabled'></i>";
     $('.points').each(function() {
       var points = parseInt($(this).data('points'));
       $(this).html("");
       if (points > 0 && points < 5) {
         for (i = 0; i < points; i++) {
-          $(this).append(activeStar);
+          $(this).append(active);
         }
         for (i = 0; i < 5 - points; i++) {
-          $(this).append(disabledStar);
+          $(this).append(disabled);
         }
       } else if (points == 5) {
         for (i = 0; i < points; i++) {
-          $(this).append(activeStar);
+          $(this).append(active);
         }
       }
     });
   },
 
 
-  updateYears = function() {
-    $('#years').unbind("DOMSubtreeModified");
-    $('#years').html(age());
-    $('#years').each(function() {
+  initAge = function() {
+    $('#age').html(age());
+    $('#age').each(function() {
       $(this).prop('Counter', 0).animate({
         Counter: $(this).text()
       }, {
-        duration: 4000,
+        duration: 3000,
         easing: 'swing',
         step: function(year) {
           $(this).text(Math.ceil(year) + 'yo');
         },
-        complete: function() {
-          $('#years').unbind("DOMSubtreeModified");
-          $('#years').bind("DOMSubtreeModified", function() {
-            updateYears();
-          });
-        }
       });
     });
   };
 
 
 $(document).ready(function() {
+  initAge();
   initSkills();
   initLanguages();
-  updateYears();
 });
