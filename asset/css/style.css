@@ -35,9 +35,6 @@ body {
   overflow: hidden;
   padding: 5px;
   display: inline-block;
-  -moz-transition: transform 0.3s ease-in-out;
-  -webkit-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
 }
 
 #photo img {
@@ -112,6 +109,18 @@ body {
   padding-left: 15px;
 }
 
+.technology {
+  color: #fff;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background: #003d73;
+  position: relative;
+  font-size: 0.85em;
+  font-weight: 600;
+  border-radius: 15px;
+}
 
 .timeline {
   border-left: 1px solid hsl(0, 0%, 90%);
@@ -186,11 +195,8 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 0.84em;
+  font-size: 0.85em;
   font-weight: 600;
-  -moz-transition: transform 0.2s ease-in-out;
-  -webkit-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
   border-radius: 15px;
 }
 
@@ -219,10 +225,7 @@ body {
   padding: 5px 10px 5px 25px;
   background: #003d73;
   position: relative;
-  font-size: 0.79em;
-  -moz-transition: transform 0.2s ease-in-out;
-  -webkit-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
+  font-size: 0.8em;
   border-radius: 15px;
 }
 .hobby:before {
@@ -254,7 +257,13 @@ body {
     top: 1.5rem;
   }
   .container {
-    width: 1170px;
+    max-width: 1400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 706px;
   }
 }
 
